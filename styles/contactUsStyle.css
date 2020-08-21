@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.head {
+    font-size: 3rem;
+    text-align: center;
+}
+body{
+  background: lightgrey;
+}
+.wrapper{
+  position: relative;
+  top: 6.5cm;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px black; 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: grey;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: grey;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+.mainNav {
+    position: sticky;
+    top:0;
+}
+.mainNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #C0C0C0;
+    flex-flow: row wrap;
+}
+.mainNav li {
+    flex-grow: 1;
+    width: 20px;
+    border: .1em rgb(17, 17, 17) solid;
+}
+.navText {
+    padding-left: 60px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.mainNav a {
+    background-repeat: no-repeat;
+    background-size: 40px auto;
+    background-position: .5em center;
+    min-height:90px;
+    line-height:60px;
+    text-decoration: none;
+    display: block;
+    color: rgb(17, 17, 17);
+}
+.mainNav a:hover {
+    background: whitesmoke;
+    color: black;
+}
+footer ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+footer a {
+    text-decoration:none ;
+    line-height: 40px;
+}
+footer a {
+    text-decoration: none ;
+    color: black;
+    padding: 20px;
+}
+footer a:hover {
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+  @media screen and  (min-width: 400px){
+    .mainNav{
+      margin: 0 20px;  
+    }
+    .mainNav ul {
+       display: flex; 
+       flex-direction: column;
+       text-decoration: none;
+       display: block;
+    }
+    .mainNav li {
+        background-color: grey;
+        width: auto;
+    }
+    .navText {
+        font-size: x-large;
+    }
+  }
+}

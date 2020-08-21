@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site that helps with travel planning">
+        <title>Travellers hub-Contact us</hub-Attractions></title>
+        <link rel="stylesheet" href="styles/contactUsStyle.css"> 
+        <link rel="stylesheet" href="styles/normalize.css"> 
+        <script src="script/main.js"></script>
+
+    </head>
+    <body>    
+        <div id="containers">
+            <header id="mainHeader">
+                <table >
+                  <td><a href="index.html"><img src="images/travelLogo.jpg" width="200" height="200" alt="Travel Logo"></a></td>
+                  <td><h1 class=head>Contact us</h1></td>
+              </table>
+              </header>
+            <nav class="mainNav">
+                <ul>
+                  <li><a href="index.html"><span class="navText">Home</span></a></li>
+                    <li><a href="attractions.html"><span class="navText">Attractions</span></a></li>
+                    <li><a href="accomadation.html"><span class="navText">Accommodation</span></a></li>
+                    <li><a href="transport.html"><span class="navText">Transport</span></a></li>
+                    <li><a href="contact.html"><span class="navText">Contact us</span></a></li>
+                </ul>
+              </nav>
+    </div>
+    <div class="wrapper">
+        <h2>Contact us</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation();">
+          <div class="input_field">
+              <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+              <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+              <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+    <footer>
+        <section>
+        Fadia Shifry <br>
+        0774187900<br>
+        Pictures & information taken from Google.</h5>
+        </section>
+        <section><h5>Company <br>
+            <a href="homepage.html"> About us</a><br>
+        </h5></section>
+            <section><h5>What we offer <br>
+            <a href="attractions.html"> Destinations</a> <br>
+            <a href="transport.html"> Transport services</a> <br>
+            </h5>
+        </section>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>

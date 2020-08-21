@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a travel site">
+        <title> Travellers Hub </title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body id="bodyimg">    
+        <div id="container">
+            <header id="mainHeader">
+                <table >
+                  <td><a href="index.html"><img src="images/travelLogo.jpg" width="200" height="200" alt="Travel Logo"></a></td>
+                  <td><h1 class=head>Transport</h1></td>
+              </table>
+              </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="attractions.html"> Attractions </a></li>
+                    <li><a href="accomadation.html"> Accommodation </a></li>
+                    <li><a href="transport.html"> Transport </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                </ul>
+            </nav>
+            <img id="mainImg" src="images/transport.jpg" alt="image head">
+            <article class="Fcontainer">
+                <h2>Transport Reservations</h2>
+                <div></div>
+                <div class="form">
+                    <form method="GET">
+                         <fieldset>
+                             <legend> <h3> Please Fill the Form below</h3></legend>
+                        <fieldset class="boxForm"> 
+                            <legend> <h3>Taxi</h3></legend>
+                            <label for="taxiChoice" name="taxiChoice"></label>
+                            <select id="taxiChoice" name="taxiChoice">
+                                <option>select one</option>
+                                <option>Tuk-Tuk</option>
+                                <option> Mini-Car</option>
+                                <option> Luxury Car</option>
+                                <option> Luxury Van </option>
+                                <option> Luxury Bus</option>
+                            </select>
+                        </fieldset>
+                        <br>
+                        <fieldset class="boxForm" id=fuel>
+                            <legend> <h3>Choice of Fuel efficiency</h3></legend>
+                            <input type="radio" id="high" name="fuel" value="high">
+                            <label for="high">High</label><br>
+                            <input type="radio" id="medium" name="fuel" value="medium">
+                            <label for="medium">Medium</label><br>
+                            <input type="radio" id="low" name="fuel" value="low">
+                            <label for="low">Low</label><br>   
+                        </fieldset>                     
+                        <fieldset class="boxForm">
+                            <legend><h3>Distance (km)</h3></legend>
+                       <label for="distance"></label>
+                       <input type="number" id="km" name="distance" placeholder="Distance">
+                        </fieldset>                       
+                        <fieldset class="boxForm" id="stay">
+                            <legend><h3>Stay</h3></legend>
+                            <input type="radio" id="oneway" name="stay" value="oneway">
+                            <label for="oneway">one way</label><br>
+                            <input type="radio" id="twoway" name="stay" value="twoway">
+                            <label for="twoway">two way</label><br>
+                            <input type="radio" id="overnight" name="stay" value="overnight">
+                            <label for="overnight">over night</label><br>
+                        </fieldset>
+                        <fieldset class="boxForm">
+                            <legend><h3>Starting Point:</h3></legend>
+                       <label for="startingPoint"></label>
+                       <input type="text" id="startingPoint" name="start" placeholder="Location">
+                        </fieldset>
+                        <fieldset class="boxForm">
+                            <legend><h3>Your Order</h3></legend> 
+                            <u><b>Current Taxi(s):</b></u>
+                            <p id="taxiC"></p>
+                            <u><b>Cost of Current taxi:</b></u>
+                            <p id="taxiCost"></p>
+                            <u><b>Overall Order:</b></u>
+                            <p id="overOrder"></p>
+                            <u><b>Overall cost of the order:</b></u>
+                            <p id="overCost"></p>
+                            <u><b>Favourites:</b></u>
+                            <p id="fav"></p>
+                            <u><b>Loyalty points</b></u>
+                            <p id="loyal"></p>
+
+                        
+                            <!--Output is shown here-->
+                        </fieldset>
+                         <section class="boxForm">
+                            <h3>
+                                <button  class="button" type="button" id="vorder"> Add to Order</button>
+                                <button class="button" type="button" id="vreserve"> Reserve</button>
+                                <button  class="button" type="button" id="aFav"> Add to fave</button>
+                                <button  class="button" type="button" id="oFav"> Order to fave</button>
+                                <button  class="button" type="button" id="cloyalty"> Check loyalty</button>
+
+
+                            </h3>                       
+                        </section>
+                    </fieldset><br>       
+                    </form>
+                </div>
+            </article>
+        </div>
+        <footer>
+            <section>
+            Fadia Shifry <br>
+            0774187900<br>
+            Pictures & information taken from Google.</h5>
+            </section>
+            <section><h5>Company <br>
+                <a href="index.html"> About us</a><br>
+                <a href="contact.html"> Contact us</a> <br>
+            </h5></section>
+                <section><h5>What we offer <br>
+                <a href="transport.html"> Transport services</a> <br>
+                </h5>
+            </section>
+        </footer>
+        <script src="script/transport.js"></script>
+    </body>
+</html>
